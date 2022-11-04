@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheet/styles.css">
+    <title>First Web Form</title>
+</head>
+
+<body>
+    <div class="border">
+        <h1>My First Web Form</h1>
+        <form method="POST" autocomplete="on" action="https://jkorpela.fi/cgi-bin/echo.cgi" target="cgi-results">
+            <fieldset>
+                <legend>Name Information</legend>
+                <label for="FirstName">First Name:</label><br><br>
+                <input type="text" id="FirstName" required placeholder="Please type your first name"
+                    title="Please type your first name" name="FirstName" style="width: 200px;"><br><br>
+                <label for="LastName">Last Name:</label><br><br>
+                <input type="text" id="LastName" required name="LastName" placeholder="Please type your last name"
+                    title="Your lastname" style="width: 200px;">
+            </fieldset><br><br>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="email">Email:</label><br><br>
+                <input id="email" type="email" name="email" placeholder="Please type your email address"
+                    title="Your email address" style="width: 200px;"><br><br>
+                <label for="telephone">Phone num:</label><br><br>
+                <input type="tel" id="telephone" name="telephone" placeholder="Please type your telephone number"
+                    value="(670)" title="Your telephone number" style="width: 200px;">
+            </fieldset><br><br>
+            <fieldset>
+                <legend>Birthday</legend>
+                <label for="dob">Date of Birth:</label><br><br>
+                <input type="date" id="dob" name="dob" placeholder="Please type your first name" title="Your birthdate"
+                    style="width: 100px;"><br><br>
+                <label for="today">Today's Date:</label><br><br>
+                <input type="date" id="today" title="Today's Date" value="11/3/2022">
+            </fieldset><br><br>
+            <button id="button">Submit</button>
+        </form><br><br>
+    </div>
+</body>
+
+</html>
